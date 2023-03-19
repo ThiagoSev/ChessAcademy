@@ -1,0 +1,26 @@
+#tabuleiro{
+    width:400px;
+    height:400px;
+    border:solid 1px;
+}
+.linha{
+    height: 50px;
+}
+.casa{
+    width: 50px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+.casa_branca{
+    background-color: #fff;
+}
+.casa_preta{
+    background-color: #626de3;
+}
+.casa_selecionada{
+    background-color: #ff0000;
+}
+.questao{
+    display: none;
+}
