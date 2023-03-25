@@ -125,13 +125,21 @@ $(function(){
                 $('.questao').hide();
                 $('#iniciar').val('Fazer Desafio');
             }else{
-                $('.questao').show();
-                $('#questaoTitulo').text('Questão 1');
-                $('#questaoTexto').append('A peça na posição <b>C1</b> é: </br>'+
-                'Alternativa A: Peão Branco</br>'+
-                'Alternativa B: Cavalo Preto</br>'+
-                'Alternativa C: Bispo Preto');
-                $('#iniciar').val('Voltar');
+                fetch('desafios.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const employees = data.employees;
+                        console.log(employees);
+                        $('.questao').show();
+                        $('#questaoTitulo').text('Questão 1');
+                        $('#questaoTexto').append('A peça na posição <b>C1</b> é: </br>'+
+                        'Alternativa A: Peão Branco</br>'+
+                        'Alternativa B: Cavalo Preto</br>'+
+                        'Alternativa C: Bispo Preto');
+                        $('#iniciar').val('Voltar');
+                    })
+                    .catch(error => console.error(error));
+                
             }
         });
     })
