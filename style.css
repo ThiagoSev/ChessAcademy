@@ -1,3 +1,7 @@
+*{
+    
+    margin: 0;
+}
 #tabuleiro{
     width:400px;
     height:400px;
@@ -23,4 +27,33 @@
 }
 .questao{
     display: none;
+}
+#header{
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.section{
+    float: left;
+    width: 33.33%;
+    background-color: rgba(0,0,0,0.1);
+}
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+.footer{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px;
+    bottom: 0px;
+}
+@media screen and (max-width: 600px){
+    .section{
+        width: 100%;
+    }
 }
