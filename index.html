@@ -10,36 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="header">
-        <h1><b>ChessAcademy</b></h1>
-        <div id="nav"></div>
-    </div>
-    <div id="row">
-        <div class="section">banana</div>
-        <div class="section">
-            <!--elementos com a classe 'questão' ficarão ocultos até que o desafio(atividade) seja iniciado por meio do botão de valor 'Fazer Desafio'-->
-            <h1 class="questao" id='questaoTitulo'>Questão</h1>
-            <p class="questao" id='questaoTexto'></p>
-            <div id="tabuleiro"></div>
-            <div id="info">
-                <ul>
-                    <li>Casa selecionada: <span id="info_casa_selecionada"></span></li>
-                    <li>Peça selecionada: <span id="info_peca_selecionada"></span></li>
-                </ul>
-            </div>
-            <input type="button" value="Alternativa A" class="questao">
-            <input type="button" value="Alternativa B" class="questao">
-            <input type="button" value="Alternativa C" class="questao"><br>
-            <input type="button" value="Fazer Desafio" id="iniciar">
-        </div>
-        <div class="section">
-            <div id="article-s3">
-                <h1>Histórico</h1>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        Site feito para TCC da ETEC
-    </div>
+    <main>
+        <!--elementos com a classe 'questão ficarão ocultos até que o desafio(atividade) seja iniciado por meio do botão de valor 'Fazer Desafio'-->
+        <h1 class="questao" id='questaoTitulo'>Questão</h1>
+        <p class="questao" id='questaoTexto'></p>
+        <span class="spnQtd"></span>
+        <span class="question"></span>
+        <span class="answers"></span>
+        <div id="tabuleiro"></div>
+    </main>
 </body>
 </html>
