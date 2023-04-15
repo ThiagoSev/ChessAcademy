@@ -1,11 +1,22 @@
+:root{
+    --palheta1c1: #e2fdff;
+    --palheta1c2: #9bb1ff;
+    --palheta1c3: #788bff;
+    --palheta1c4: #5465ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
 #tabuleiro{
+    margin: 10px;
     width:400px;
     height:400px;
     border:solid 1px;
-}
-:root{
-    --branco: #fff;
-    --preta: #626de3;
+    align-items: center;
 }
 .linha{
     height: 50px;
@@ -20,11 +31,64 @@
     background-color: #fff;
 }
 .casa_preta{
-    background-color: #626de3;
-}
-.casa_selecionada{
-    background-color: calc(--cor+rgba(0,0,0,0.5));
+    background-color: var(--palheta1c2);
 }
 .questao{
     display: none;
+}
+  
+body{
+    height: 100vh;
+    background-color: var(--palheta1c4);
+}
+  
+body h2{
+    color: #000000;
+}
+  
+main{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    min-height: 200px;
+}
+  
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+  
+.spnQtd{
+    text-align: end;
+}
+  
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+button{
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--palheta1c3);
+    color: #fff;
+}
+  
+.finish{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.finish button{
+    text-align: center;
 }

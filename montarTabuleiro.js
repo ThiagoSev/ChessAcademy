@@ -1,6 +1,4 @@
 $(function(){
-	var casa_selecionada = null;
-	var peca_selecionada = null;
 	function MontarTabuleiro(){
         var i;
         //criar as linhas
@@ -75,90 +73,4 @@ $(function(){
         }
     }
 	MontarTabuleiro();
-    $(".casa").mouseenter(function(){
-        function myFunction_set(){
-            var cor = document.querySelector(':root');
-            const cor_casa_selecionada = 
-            cor.setPorperty('--cor','')
-
-        }
-        //remove a cor da casa ex-selecionada
-        $("#"+casa_selecionada).removeClass("casa_selecionada");
-
-        //deixa a casa selecionada
-        casa_selecionada = $(this).attr("id");
-        $("#"+casa_selecionada).addClass("casa_selecionada");
-
-        //nomear as colunas com suas respectivas letras
-        /*var coluna;
-        switch(parseInt(casa_selecionada.slice(5,6))){
-            case 1:
-                coluna = 'a';
-                break;
-            case 2:
-                coluna = 'b';
-                break;
-            case 3:
-                coluna = 'c';
-                break;
-            case 4:
-                coluna = 'd';
-                break;
-            case 5:
-                coluna = 'e';
-                break;
-            case 6:
-                coluna = 'f';
-                break;
-            case 7:
-                coluna = 'g';
-                break;
-            case 8:
-                coluna = 'h';
-                break;
-        }
-        $("#info_casa_selecionada").text(casa_selecionada.replace(casa_selecionada.slice(5,6),coluna));
-
-        peca_selecionada = $("#"+casa_selecionada).children("img:first").attr("id");
-        if(peca_selecionada==null){
-            peca_selecionada = "nehuma peça selecionada";
-        }
-        $("#info_peca_selecionada").text(peca_selecionada.toString());*/
-    });
-    $(document).ready(function(){
-        
-    });
-    //Questões com enunciados
-    
-    $('#iniciar').click(function(){
-        if($('.questao').is(':visible')){
-            localStorage.setItem('nivelAtual','1');
-            localStorage.setItem('Questão 1','Qual o movimento correto do peão dama?<br><input type="radio" id="a" name="alternativa">A- e4<br><input type="radio" id="b" name="alternativa">B- c5<br><input type="radio" id="c" name="alternativa">C- c4<br><input type="radio" id="d" name="alternativa">D- d4');
-            localStorage.setItem('Questão 2','Qual é o principal princípio de abertura?<br><input type="radio" id="a" name="alternativa">A- Desenvolver as peças<br><input type="radio" id="b" name="alternativa">B- Fazer o roque<br><input type="radio" id="c" name="alternativa"><br>C- Fazer o movimento peão dama<br><input type="radio" id="d" name="alternativa">D- Dominar o centro');
-            localStorage.setItem('Questão 3','Como ganhar vantagem nesta posição?<br><input type="radio" id="a" name="alternativa">A- Ccxd5<br><input type="radio" id="b" name="alternativa">B- a6<br><input type="radio" id="c" name="alternativa">C- Dh5+, Dxb5<br><input type="radio" id="d" name="alternativa">D- Bd7');
-            $('.questao').hide();
-            $('#iniciar').val('Fazer Desafio');
-        }else{
-            switch(localStorage.getItem('nivelAtual')){
-                case '1':
-                    $('#questaoTexto').html(localStorage.getItem('Questão 1'));
-                    break;
-                case '2':
-                    $('#questaoTexto').html(localStorage.getItem('Questão 2'));
-                    break;
-                case '3':
-                    $('#questaoTexto').html(localStorage.getItem('Questão 3'));
-                    break;
-                case '4':
-                    $('#questaoTexto').html(localStorage.getItem('Questão 4'));
-                    break;
-                case '5':
-                    $('#questaoTexto').html(localStorage.getItem('Questão 5'));
-                    break;
-            }
-            $('.questao').show();
-            $('#iniciar').val('Voltar');
-            localStorage.setItem('nivelAtual', n++);
-        }
-    })
 });
