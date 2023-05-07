@@ -15,13 +15,19 @@ let currentIndex = 0;
 let questionsCorrect = 0;
 
 btnRestart.onclick = () => {
-content.style.display = "flex";
-contentFinish.style.display = "none";
-
-currentIndex = 0;
-questionsCorrect = 0;
-loadQuestion();
+    content.style.display = "flex";
+    contentFinish.style.display = "none";
+  
+    currentIndex = 0;
+    questionsCorrect = 0;
+    loadQuestion();
 };
+
+function finish() {
+    textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
+    content.style.display = "none";
+    contentFinish.style.display = "flex";
+}
 
 function loadQuestion() {
     //carregar textos de informação na tela
@@ -48,22 +54,28 @@ function loadQuestion() {
     });
 }
 function nextQuestion(e) {
-    if (e.target.getAttribute("data-correct") === "true") {
-        questionsCorrect++;
-    }
+    const otherBtn = document.querySelectorAll('.answer');
+    otherBtn.forEach((other) => {
+        other.style.backgroundColor = '#bebebe';
+        other.style.transition = '0.2s';
+    });
 
+    const clickBtn = e.target;
+    if (e.target.getAttribute("data-correct") === "true") {
+	    clickBtn.style.backgroundColor = '#adff2f';
+        clickBtn.style.transition = '0.2s';
+        questionsCorrect++;
+    }else{
+        clickBtn.style.backgroundColor = '#ff7b2f';
+        clickBtn.style.transition = '0.2s';
+    }
     if (currentIndex < questions.length - 1) {
         currentIndex++;
-        loadQuestion();
+        const next = setTimeout(loadQuestion, 1000);
+        //loadQuestion();
     } else {
-        finish();
+        const stop = setTimeout(finish, 1000);
     }
-}
-
-function finish() {
-    textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
-    content.style.display = "none";
-    contentFinish.style.display = "flex";
 }
 
 loadQuestion();

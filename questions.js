@@ -10,7 +10,7 @@ export default [
     },
     {
         question: "Qual é  o principal princípio de abertura?",
-        aswers: [
+        answers: [
             { option: "Desenvolver as peças.", correct: true },
             { option: "Fazer o roque.", correct: false },
             { option: "Fazer o movimento peão dama.", correct: false },
@@ -22,7 +22,7 @@ export default [
         answers: [
             { option: "Ccxd5", correct: false },
             { option: "a6", correct: false },
-            { option: "Dh5+", correct: false },
+            { option: "Dh5+, Dxb5", correct: true },
             { option: "Bd7", correct: false },
         ],
     },

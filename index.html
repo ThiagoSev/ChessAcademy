@@ -7,24 +7,33 @@
     <link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="montarTabuleiro.js"></script>
-    <script type="module" src="quiz.js"></script>
     <title>Quiz</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
     <main>
         <!--elementos com a classe 'questão ficarão ocultos até que o desafio(atividade) seja iniciado por meio do botão de valor 'Fazer Desafio'-->
-        <h1 class='title'></h1>
-        <div class="content">
-            <span class="spnQtd"></span>
-            <span class="question"></span>
-            <span class="answers"></span>
-        </div>
-        <div id="tabuleiro"></div>
-        <div class="finish">
-            <span></span>
-            <button>Reiniciar</button>
-        </div>
-    </main>
+        <section>
+            <ul>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+            </ul>
+        </section>
+        <section>
+            <h1 class='title'></h1>
+            <div class="content">
+                <span class="spnQtd"></span>
+                <span class="question"></span>
+                <span class="answers"></span>
+            </div>
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+            <div id="tabuleiro"></div>
+                </main>
+                <script type="module" src="quiz.js"></script>
+        </section>
 </body>
 </html>

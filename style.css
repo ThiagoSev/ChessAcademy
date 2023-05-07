@@ -10,9 +10,16 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
-
+main{
+    background-color: var(--palheta1c4);
+    min-height: 100vh;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
 #tabuleiro{
-    margin: 10px;
+    margin: 10px auto;
     width:400px;
     height:400px;
     border:solid 1px;
@@ -45,14 +52,11 @@ body{
 body h2{
     color: #000000;
 }
-  
-main{
+section{
     background-color: #fff;
     padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 700px;
-    min-height: 200px;
+    width: 45%;
+    height: 90vh;
 }
   
 .content{
@@ -81,6 +85,10 @@ button{
     cursor: pointer;
     background-color: var(--palheta1c3);
     color: #fff;
+}
+.buttonCorrect{
+    background-color: #ff7b2f;
+    transition: 1s;
 }
   
 .finish{
