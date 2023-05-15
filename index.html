@@ -4,21 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chessBoardStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="montarTabuleiro.js"></script>
     <title>Quiz</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
+    <header>
+        <h1>Chess Academy</h1>
+        <nav>
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </nav>
+    </header>
     <main>
         <!--elementos com a classe 'questão ficarão ocultos até que o desafio(atividade) seja iniciado por meio do botão de valor 'Fazer Desafio'-->
         <section>
-            <ul>
-                <a href="">Link 1</a>
-                <a href="">Link 2</a>
-                <a href="">Link 3</a>
-            </ul>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 1</a></li>
+                    <li>
+                        <a href="">Estilo <i class="fas fa-caret-right"></i></a>
+                        <div class="dropDownMenu">
+                            <ul>
+                                <li>
+                                    <a href="">Tabuleiro <i class="fas fa-caret-right"></i></a>
+                                    <div class="dropDownMenu-1">
+                                        <ul>
+                                            <li><input type="button" value="Medieval"></li>
+                                            <li><input type="button" value="Natal"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">Palheta <i class="fas fa-caret-right"></i></a>
+                                    <div class="dropDownMenu-2">
+                                        <ul>
+                                            <li><input type="button" value="Azul"></li>
+                                            <li><input type="button" value="Vermelho"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section>
             <h1 class='title'></h1>
@@ -29,11 +64,16 @@
             </div>
             <div class="finish">
                 <span></span>
+                <p></p>
                 <button>Reiniciar</button>
             </div>
             <div id="tabuleiro"></div>
                 </main>
                 <script type="module" src="quiz.js"></script>
         </section>
+        <footer>
+            <p>Feito por uma turminha do balacobaco</p>
+            <p>&copyTurminha do Balacobaco</p>
+        </footer>
 </body>
 </html>

@@ -10,11 +10,18 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
+header, footer{
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
 main{
     background-color: var(--palheta1c4);
-    min-height: 100vh;
+    min-height: 20vh;
     display: flex;
     gap: 15px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -58,7 +65,54 @@ section{
     width: 45%;
     height: 90vh;
 }
-  
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    padding: 0px 10px;
+    position: relative;
+}
+.menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--palheta1c4);
+}
+.dropDownMenu{
+    display: none;
+}
+/*.menu ul li:hover*/ .dropDownMenu{
+    display: block;
+    position: absolute;
+}
+.dropDownMenu ul{
+    margin: 10px;
+}
+.dropDownMenu-1{
+    display: none;
+}
+/*.dropDownMenu ul li:hover*/ .dropDownMenu-1{
+    display: block;
+}
+.dropDownMenu-1 ul li input[type="button"], .dropDownMenu-2 ul li input[type="button"]{
+    border: none;
+    font-size: 15px;
+    color: var(--palheta1c4);
+    padding: 2px;
+    width: 150%;
+    margin: 2px 0px;
+    text-align: left;
+    
+}
+.dropDownMenu-1 ul li input[type="button"]:hover, .dropDownMenu-2 ul li input[type="button"]:hover{
+    color: #000000;
+}
+.dropDownMenu-2{
+    display: none;
+}
+/*.dropDownMenu ul li:hover*/ .dropDownMenu-2{
+    display: block;
+}
+
 .content{
     display: flex;
     flex-direction: column;
