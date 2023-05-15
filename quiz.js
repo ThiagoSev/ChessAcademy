@@ -62,11 +62,11 @@ function nextQuestion(e) {
 
     const clickBtn = e.target;
     if (e.target.getAttribute("data-correct") === "true") {
-	    clickBtn.style.backgroundColor = '#adff2f';
+	    clickBtn.style.backgroundColor = '#61E294';
         clickBtn.style.transition = '0.2s';
         questionsCorrect++;
     }else{
-        clickBtn.style.backgroundColor = '#ff7b2f';
+        clickBtn.style.backgroundColor = '#DB504A';
         clickBtn.style.transition = '0.2s';
     }
     if (currentIndex < questions.length - 1) {
