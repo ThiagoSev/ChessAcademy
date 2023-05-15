@@ -72,5 +72,10 @@ $(function(){
             }
         }
     }
+    function mov1(){
+        if(i==6 && j==3){
+            $("#"+nome_casa).empty();
+        }
+    }
 	MontarTabuleiro();
 });

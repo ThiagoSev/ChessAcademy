@@ -3,6 +3,7 @@ const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
 const spnQtd = document.querySelector(".spnQtd");
 const textFinish = document.querySelector(".finish span");
+const premio = document.querySelector(".finish p");
 const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
@@ -25,6 +26,10 @@ btnRestart.onclick = () => {
 
 function finish() {
     textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
+    if(questionsCorrect == 5){
+        const tabuleiroMedieval = 'tabuleiro medieval'; //const previsória até a criação do tabuleiro no BD
+        premio.innerHTML = `Parabéns! Você ganhou o ${tabuleiroMedieval}`
+    }
     content.style.display = "none";
     contentFinish.style.display = "flex";
 }
@@ -50,6 +55,7 @@ function loadQuestion() {
     });
 
     document.querySelectorAll(".answer").forEach((item) => {
+        item.addEventListener("hover", mov1);
         item.addEventListener("click", nextQuestion);
     });
 }
