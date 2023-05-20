@@ -5,7 +5,14 @@ export default [
             { option: "e4", correct: false },
             { option: "c5", correct: false },
             { option: "c4", correct: false },
-            { option: "d4", correct: true },
+            { option: "d4", correct: true, action: function(){
+                $('#peaoPreto_2_4').remove();
+                $('#casa_4_4').append("<img src='pecas/PeaoPreto.png' class='peca' id='peaoPreto_4_4'/>");
+                setTimeout(() => {
+                    $('#peaoPreto_4_4').remove();
+                    $('#casa_2_4').append("<img src='pecas/PeaoPreto.png' class='peca' id='peaoPreto_2_4'/>");
+                }, 1000);
+            }},
         ],
     },
     {
@@ -23,7 +30,7 @@ export default [
             { option: "Ccxd5", correct: false },
             { option: "a6", correct: false },
             { option: "Dh5+, Dxb5", correct: true },
-            { option: "Bd7", correct: false },
+            { option: "Bd7", correct: false},
         ],
     },
     {

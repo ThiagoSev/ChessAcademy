@@ -18,63 +18,58 @@ $(function(){
                 function CriarPecas(){
                     //torres brancas
                     if(i==0&&j==0||i==0&&j==7){
-                        $("#"+nome_casa).append("<img src='pecas/TorreBranca.png' class='peca' id='"+nome_casa.replace("casa","torre")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/TorreBranca.png' class='peca' id='"+nome_casa.replace("casa","torreBranco")+"'/>");
                     }
                     //torres pretas
                     if(i==7&&j==0||i==7&&j==7){
-                        $("#"+nome_casa).append("<img src='pecas/TorrePreta.png' class='peca' id='"+nome_casa.replace("casa","torre")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/TorrePreta.png' class='peca' id='"+nome_casa.replace("casa","torrePreta")+"'/>");
                     }
 
                     //cavalos brancos
                     if(i==0&&j==1||i==0&&j==6){
-                        $("#"+nome_casa).append("<img src='pecas/CavaloBranco.png' class='peca' id='"+nome_casa.replace("casa","cavalo")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/CavaloBranco.png' class='peca' id='"+nome_casa.replace("casa","cavaloBranco")+"'/>");
                     }
                     //cavalos pretos
                     if(i==7&&j==1||i==7&&j==6){
-                        $("#"+nome_casa).append("<img src='pecas/CavaloPreto.png' class='peca' id='"+nome_casa.replace("casa","cavalo")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/CavaloPreto.png' class='peca' id='"+nome_casa.replace("casa","cavaloPreto")+"'/>");
                     }
 
                     //bispos brancos
                     if(i==0&&j==2||i==0&&j==5){
-                        $("#"+nome_casa).append("<img src='pecas/BispoBranco.png' class='peca' id='"+nome_casa.replace("casa","bispo")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/BispoBranco.png' class='peca' id='"+nome_casa.replace("casa","bispoBranco")+"'/>");
                     }
                     //bispos pretos
                     if(i==7&&j==2||i==7&&j==5){
-                        $("#"+nome_casa).append("<img src='pecas/BispoPreto.png' class='peca' id='"+nome_casa.replace("casa","bispo")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/BispoPreto.png' class='peca' id='"+nome_casa.replace("casa","bispoPreto")+"'/>");
                     }
 
                     //rainha branca
                     if(i==0&&j==3){
-                        $("#"+nome_casa).append("<img src='pecas/RainhaBranca.png' class='peca' id='"+nome_casa.replace("casa","rainha")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/RainhaBranca.png' class='peca' id='"+nome_casa.replace("casa","rainhBranca")+"'/>");
                     }
                     //rainha preta
                     if(i==7&&j==3){
-                        $("#"+nome_casa).append("<img src='pecas/RainhaPreta.png' class='peca' id='"+nome_casa.replace("casa","rainha")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/RainhaPreta.png' class='peca' id='"+nome_casa.replace("casa","rainhaPreta")+"'/>");
                     }
 
                     //rei branco
                     if(i==0&&j==4){
-                        $("#"+nome_casa).append("<img src='pecas/ReiBranco.png' class='peca' id='"+nome_casa.replace("casa","rei")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/ReiBranco.png' class='peca' id='"+nome_casa.replace("casa","reiBranco")+"'/>");
                     }
                     //rei preto
                     if(i==7&&j==4){
-                        $("#"+nome_casa).append("<img src='pecas/ReiPreto.png' class='peca' id='"+nome_casa.replace("casa","rei")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/ReiPreto.png' class='peca' id='"+nome_casa.replace("casa","reiPreto")+"'/>");
                     }
 
                     if(i==1){
-                        $("#"+nome_casa).append("<img src='pecas/PeaoBranco.png' class='peca' id='"+nome_casa.replace("casa","peão")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/PeaoBranco.png' class='peca' id='"+nome_casa.replace("casa","peaoBranco")+"'/>");
                     }
                     if(i==6){
-                        $("#"+nome_casa).append("<img src='pecas/PeaoPreto.png' class='peca' id='"+nome_casa.replace("casa","peao")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/PeaoPreto.png' class='peca' id='"+nome_casa.replace("casa","peaoPreto")+"'/>");
                     }
                 }
                 
             }
-        }
-    }
-    function mov1(){
-        if(i==6 && j==3){
-            $("#"+nome_casa).empty();
         }
     }
 	MontarTabuleiro();
