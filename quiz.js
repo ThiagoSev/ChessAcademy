@@ -9,8 +9,6 @@ const btnRestart = document.querySelector(".finish button");
 
 import questions from "./questions.js";
 
-console.log('oi');
-
 let currentIndex = 0;
 let questionsCorrect = 0;
 
@@ -30,21 +28,22 @@ function finish() {
 }
 
 function loadQuestion() {
-    //carregar textos de informação na tela
     title.innerHTML = `Questão ${currentIndex + 1}`;
-    spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
+    spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;   
     const item = questions[currentIndex];
     answers.innerHTML = "";
     question.innerHTML = item.question;
+    let i = 0;
 
     item.answers.forEach((answer) => {
         const div = document.createElement("div");
 
         div.innerHTML = `
-        <button class="answer" data-correct="${answer.correct}">
+        <button class="answer" id="${i}" data-correct="${answer.correct}">
         ${answer.option}
         </button>
         `;
+        i++;
 
         answers.appendChild(div);
     });
@@ -62,18 +61,17 @@ function nextQuestion(e) {
 
     const clickBtn = e.target;
     if (e.target.getAttribute("data-correct") === "true") {
-        questions[currentIndex].answers[3].action();
+        questions[currentIndex].answers[this.id].action();
 	    clickBtn.style.backgroundColor = '#61E294';
         clickBtn.style.transition = '0.2s';
         questionsCorrect++;
     }else{
-        console.log(typeof(clickBtn));
         clickBtn.style.backgroundColor = '#DB504A';
         clickBtn.style.transition = '0.2s';
     }
     if (currentIndex < questions.length - 1) {
         currentIndex++;
-        setTimeout(loadQuestion, 1000);
+        setTimeout(loadQuestion, questions[currentIndex-1].time);
         //loadQuestion();
     } else {
         setTimeout(finish, 1000);

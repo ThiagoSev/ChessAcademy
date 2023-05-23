@@ -18,7 +18,7 @@ $(function(){
                 function CriarPecas(){
                     //torres brancas
                     if(i==0&&j==0||i==0&&j==7){
-                        $("#"+nome_casa).append("<img src='pecas/TorreBranca.png' class='peca' id='"+nome_casa.replace("casa","torreBranco")+"'/>");
+                        $("#"+nome_casa).append("<img src='pecas/TorreBranca.png' class='peca' id='"+nome_casa.replace("casa","torreBranca")+"'/>");
                     }
                     //torres pretas
                     if(i==7&&j==0||i==7&&j==7){
