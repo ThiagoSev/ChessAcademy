@@ -47,7 +47,7 @@ function loadQuestion() {
 
         answers.appendChild(div);
     });
-
+    item.initialBoard();
     document.querySelectorAll(".answer").forEach((item) => {
         item.addEventListener("click", nextQuestion);
     });
