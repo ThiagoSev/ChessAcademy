@@ -65,16 +65,15 @@ function nextQuestion(e) {
 	    clickBtn.style.backgroundColor = '#61E294';
         clickBtn.style.transition = '0.2s';
         questionsCorrect++;
+        if(currentIndex < questions.length - 1){
+            setTimeout(loadQuestion, questions[currentIndex].time);
+            currentIndex++;
+        }
     }else{
         clickBtn.style.backgroundColor = '#DB504A';
         clickBtn.style.transition = '0.2s';
-    }
-    if (currentIndex < questions.length - 1) {
+        setTimeout(loadQuestion, 1000);
         currentIndex++;
-        setTimeout(loadQuestion, questions[currentIndex-1].time);
-        //loadQuestion();
-    } else {
-        setTimeout(finish, 1000);
     }
 }
 
