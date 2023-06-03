@@ -23,7 +23,7 @@ function catched(pecaInicial, tempo){
     }, tempo);
 }
 
-function limparCampo(){
+function resetBoard(){
     $('.casa').empty();
     $('#casa_1_1').append("<img src='pecas/TorreBranca.png' class='peca' id='torreBranca_1_1'/>");
     $('#casa_1_2').append("<img src='pecas/CavaloBranco.png' class='peca' id='cavaloBranco_1_2'/>");
@@ -66,7 +66,7 @@ export default [
         //QUESTÃO 1
         question: "Qual o movimento correto do peão dama?",
         initialBoard: () =>{
-            limparCampo();
+            resetBoard();
         },
         answers: [
             { option: "e4", correct: false },
@@ -108,7 +108,7 @@ export default [
         //QUESTÃO 3
         question: "Como as pretas podem ganhar vantagem nesta posição?",
         initialBoard: () =>{
-            limparCampo();
+            resetBoard();
             $('#peaoBranco_2_4').remove();
             $('#peaoBranco_2_5').remove();
             $('#peaoPreto_7_3').remove();
@@ -137,7 +137,7 @@ export default [
         //QUESTÃO 4
         question: "Qual  o melhor lance para as brancas?",
         initialBoard: () =>{
-            limparCampo();
+            resetBoard();
             $('#cavaloPreto_8_7').remove();
             $('#bispoBranco_1_3').remove();
             initialBoard('PeaoBranco', 'peaoBranco_2_5', 'peaoBranco_4_5', '#casa_2_5', '#casa_4_5', 0); //e4
