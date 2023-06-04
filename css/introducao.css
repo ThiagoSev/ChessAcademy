@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root{
+    --azul_escuro:#03045e;
+    --azul_mc:#023e8a;
+    --azul_be:#0077b6;
+    --azul_mb:#0096c7;
+    --azul_ca:#0096c7;
+    --azul_cc:#48cae4;
+    --azul_mt:#90e0ef;
+    --azul_mtc:#ade8f4;
+    --azul_tr:#5473ff;
+    --azul_ta:#6a7cf3;
+    --azul_tu:#9bb1ff;
+    --azul_te:#e2fdff;
+  }
+
+ /*Introdução do aluno*/
+
+ .parte{
+    position: relative;
+    top: 100px;
+  }
+  
+.parte p{
+    position: relative;
+    text-align: justify;
+    width: 50%;
+    left: 20em;
+    padding-top: 15px;
+    line-height: 24.5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.parte-um{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#p-titul{
+  margin-top: 8px;
+}
+
+#titulo{
+  font-size: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+  left: 10em;
+  padding-top: 20px;
+  color: var(--azul_tr);
+}
+
+.parte h3,h5,h4{
+    position: relative;
+    text-align: left;
+    width: 50%;
+    left: 16em; 
+    padding-top: 17px;
+    font-size: 20px;
+    line-height: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--azul_tr);   
+}
+
+.parte .valor,.image{
+     margin-top: 20px;
+}
+
+strong{
+  color: var(--azul_mb);
+  font-weight: bold;
+}
+
+/*Imagem*/
+.image{
+  position: relative;
+  width: 300px;
+  left: 20em;
+}
+
+.valor{
+  position: relative;
+  padding-top: 30px;
+  left: 21em;
+}
+
+hr{
+  position: relative;
+  width: 55%;
+  left: 19.5em;
+  top: 25px;
+  margin-top: 50px;
+  border: 0px;
+  border-top: 3px solid var(--azul_tu);
+}
+
+.peca{
+    position:relative;
+    top: 65px;
+}
+
+/*tabela*/
+
+.tabela {
+  position: relative;
+  left: 22em;
+  top: 40px;
+  border: 3px solid rgb(58, 58, 58);
+  background-color: var(--azul_Ca);
+  width: 11em;
+  border-collapse: collapse;
+}
+
+.dois{
+  position: relative;
+  top: 3em;
+}
+
+.conteiner_dois {
+      position: relative;
+      top: 100px;
+}
+.tabela td{
+  border: 2px solid rgba(241, 241, 241, 0.904);
+  text-align: center;
+}
+
+.tabela th{
+  padding: 5px;
+  font-size: 20px;
+  background-color: var(--azul_Ca);
+}
+
+.tabela td{
+  padding: 5px;
+}
+
+.topo td{
+    background-color: var(--azul_escuro);
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+/*hr entre tabela e tabuleiro*/
+
+#tt{
+    top: 180px;
+}
+
+/*tabuleiro*/
+
+.tabuleiro{
+   position: relative;
+   top: 225px;
+}
+
+.tabuleiro h5{
+    color: var(--azul_ta);
+}
+.tabuleiro p{
+    font-weight: bold;
+    color:black;
+}
+
+.tabuleiro h3{
+  font-size: 30px;
+  padding: 20px;
+  left: 10em;
+  padding-top: 20px;
+  color: var(--azul_tr);
+}
+
+.coluna{
+  position: relative;
+  top: 30px;
+}
+
+.coluna img{
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.coluna p,h5{
+  line-height: 18px;
+  top: 5px;
+}
+
+.numero{
+  position: absolute;
+  top: 450px;
+}
+
+.numero img{
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+ 
+.num{
+  position: relative;
+  float: right;
+  top: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

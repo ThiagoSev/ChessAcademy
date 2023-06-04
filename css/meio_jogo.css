@@ -1,0 +1,224 @@
+
+
+
+:root{
+    --azul_escuro:#03045e;
+    --azul_mc:#023e8a;
+    --azul_be:#0077b6;
+    --azul_mb:#0096c7;
+    --azul_ca:#0096c7;
+    --azul_cc:#48cae4;
+    --azul_mt:#90e0ef;
+    --azul_mtc:#ade8f4;
+    --azul_tr:#5473ff;
+    --azul_ta:#6a7cf3;
+    --azul_tu:#9bb1ff;
+    --azul_te:#e2fdff;
+  
+  }
+  
+  
+/*div pai de todos os elementos e conteiners*/
+.etapa_dois{
+
+    position: relative;
+    padding: 10px 20px;
+    width: 50%;
+    text-align: justify;
+    top: 120px;
+    left: 20em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#titulo_um{
+    font-size: 30px;
+    color: var(--azul_tr);
+   
+}
+
+#p_um{
+    margin-top: 8px;
+    
+}
+.etapa_dois p{
+    padding: 20px 0;
+    margin-bottom: 16px;
+    
+}
+
+.etapa_dois h5,h6{
+    font-size: 20px;
+    padding: 20px 0;
+    margin-top: 20px;
+    color:var(--azul_tr);
+}
+
+.etapa_dois ul,li{
+    width: 95%;
+    padding-bottom: 20px;
+    margin-top: 25px;
+  }
+
+.etapa_dois ul{
+  list-style: none;
+    
+}
+
+.etapa_dois ul li:before{
+  content: '\2022';
+  color: var(--azul_ta);
+  font-weight: bold;
+}
+/*primeira observação*/
+
+.obs_um{
+    background-color: var(--branco_c);
+    padding: 20px 40px; 
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 80%;
+    line-height: 20px;
+}
+
+#obs_p{
+    margin-top: -20px;
+}
+
+hr{
+  position: relative;
+  border-top: 4px solid var(--azul_tu);  
+  margin: 30px 0;
+}
+
+  .mediana{
+    margin-top: 70px;
+    
+  }
+
+  .mediana>h5{
+    font-size: 30px;
+    
+  }
+
+  .topico_dois{
+    margin-bottom: 60px;
+  }
+
+  .obs_dois{
+    background-color: var(--branco_c);
+    padding: 20px 40px; 
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 80%;
+    line-height: 20px;
+
+  }
+
+  .topico_tres{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #posicional{
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+.topico_quatro{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.topico_quatro p{
+    margin-top: 10px;
+}
+
+.mj_bispo img{
+  width: 50%;
+}
+
+.mj_bispo{
+  text-align: center;
+}
+
+.conteiner{
+  text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+
+
+/*Celular*/
+
+@media (min-width:320px) and (max-width:425px){
+  .etapa_dois{
+      height: auto;
+      left: 1.5em;
+      width: 96%;
+      padding: 10px 13px;
+      
+}
+#titulo_um{
+  font-size: 25px;
+}
+ p{
+  font-size: 12px;
+  width: 90%;
+  height: auto;
+}
+.etapa_dois ul,li{
+  font-size: 12px;
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 90%;
+
+}
+.etapa_dois h5,h3,#posicional{
+  font-size: 18px;
+  word-spacing: -1.4px;
+  width: 100%;
+  
+}.etapa_dois h6{
+  font-size: 16px;
+  width: 70%;
+}
+.mediana p{
+  font-size: 12px;
+
+}
+.mediana>h6{
+  font-size: 16px;
+}
+.p_bispo{
+  font-size: 12px;
+}.obs_um{
+  width: 85%;
+  margin-left: 0;
+  padding: 5px 20px;
+  line-height: 18px;
+  margin-left: 0.1em;
+}#obs_p{
+  font-size: 12px;
+  height: auto;
+
+}.obs_dois{
+  width: 85%;
+  height: auto;
+  padding: 0px 8px;
+  margin-left: 0.1em;
+}
+
+}.topico_tres{
+  margin-top: -45px;
+  margin-bottom: -20px;
+  width: 100%;
+}hr{
+  width: 92%;
+  border-top: 8px solid var(--azul_tu); 
+  border-radius: 5px;
+}

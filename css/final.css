@@ -1,0 +1,148 @@
+
+:root{
+    --azul_escuro:#03045e;
+    --azul_mc:#023e8a;
+    --azul_be:#0077b6;
+    --azul_mb:#0096c7;
+    --azul_ca:#0096c7;
+    --azul_cc:#48cae4;
+    --azul_mt:#90e0ef;
+    --azul_mtc:#ade8f4;
+    --azul_tr:#5473ff;
+    --azul_ta:#6a7cf3;
+    --azul_tu:#9bb1ff;
+    --azul_te:#e2fdff;
+  
+  }
+  
+  /*paleta substituta*/
+
+  :root{
+    --verde_m:#006D77;
+    --verde_c:#83c5Be;
+    --branco_c:#EDF6F9;
+    --branco_e:#ecfcfdb2;
+     --branco_d:#dcf4fce5;
+    --rose_c:#FFDDD2;
+    --laranja_c:#e29578;
+  }
+
+
+  .etapa_tre{
+    
+        position: relative;
+        padding: 10px 20px;
+        width: 50%;
+        text-align: justify;
+        top: 100px;
+        left: 20em;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+
+  div{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#titulo_um{
+    font-size: 30px;
+    color: var(--azul_tr);
+    margin-top: 0;
+}
+
+.etapa_tre h3{
+    font-size: 25px;
+    color: var(--azul_tr);
+    margin-bottom: 25px;
+    margin-top: 60px;
+}
+
+.etapa_tre h5,h6{
+    font-size: 20px;
+    padding: 20px 0;
+    margin-top: 25px;
+    color: var(--azul_tr);
+}
+
+.etapa_tre ul{
+    list-style: none;
+    width: 95%;
+}
+
+.etapa_tre li{
+  padding: 5px 15px;
+ 
+
+}
+  
+  .etapa_tre ul li:before{
+    content: '\2022';
+    color: var(--azul_ta);
+    font-weight: bold;
+    padding: 10px 0px;
+
+    
+  }
+
+hr{
+  position: relative;
+  border-top: 4px solid var(--azul_tu);   
+}
+
+/*FINAL*/
+
+.final{
+  text-align: left;
+  margin: 0;
+
+}
+.final img{
+  width: 30%;
+}
+/*RESPONSIVIDADE*/
+
+
+/*Celular*/
+
+@media (min-width:320px) and (max-width:425px){
+  .etapa_tre{
+    height: auto;
+    left: 1.5em;
+    width: 96%;
+    height: auto;
+    padding: 10px 13px;
+
+  }#titulo_um{
+    font-size: 25px;
+  }.etapa_tre p{
+     font-size: 12px;
+     height: auto;
+     width: 90%;
+
+  }.etapa_tre h3{
+    font-size: 18px;
+    width: 100%;
+  }.etapa_tre h6{
+    font-size: 16px;
+    width: 100%;
+  }.etapa_tre h5{
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+  }.etapa_tree ul,li{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 85%;
+  }.etapa_tre ul li:before{
+    content: '\2022';
+    color: var(--azul_ta);
+    font-weight: bold;
+    padding: 0 0px;  
+  }hr{
+    width: 92%;
+    border-top: 8px solid var(--azul_tu); 
+    border-radius: 5px;
+  }
+}

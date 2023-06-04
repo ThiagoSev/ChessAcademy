@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --azul_escuro:#03045e;
+  --azul_mc:#023e8a;
+  --azul_be:#0077b6;
+  --azul_mb:#0096c7;
+  --azul_ca:#0096c7;
+  --azul_cc:#48cae4;
+  --azul_mt:#90e0ef;
+  --azul_mtc:#ade8f4;
+  --azul_tr:#5465ff;
+  --azul_ta:#788bff;
+  --azul_tu:#9bb1ff;
+  --azul_te:#e2fdff;
+
+}
+
+/*paleta substituta*/
+:root{
+  --verde_m:#006D77;
+  --verde_c:#83c5Be;
+  --branco_c:#EDF6F9;
+  --branco_e:#ecfcfdb2;
+   --branco_d:#dcf4fce5;
+  --rose_c:#FFDDD2;
+  --laranja_c:#e29578;
+}
+
+
+/*menu*/
+aside {
+  color: #fff;
+  width: 250px;
+  padding-left: 20px;
+  top: 0;
+  height: 100vh;
+  background-image: linear-gradient(30deg , #0048bd, #44a7fd);
+  border-top-right-radius: 80px;
+  /*position: absolute;*/
+}
+
+aside a {
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+aside a:hover {
+  color: #3f5efb;
+  background: #fff;
+  outline: none;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+aside a i {
+  margin-right: 5px;
+}
+
+aside a:hover::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+
+aside a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 38px;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -20px 0 0 #fff;
+}
+
+aside p {
+  margin: 0;
+  padding: 40px 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.social {
+  height: 0;  
+}
+
+.social i:before {
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top:5px;
+  right:5px;
+}
+
+
+/*os links*/
+a{
+  text-decoration: none;
+}
+
+
+/*os links*/
+a{
+    text-decoration: none;
+}
+
+/*video*/
+
+.container{
+   max-width: 700px;
+   margin: 0;
+
+}
+
+.video{
+  width: 100%;
+  height: 50%;
+  padding: 56.25% ;
+  position: relative;
+}
+.video iframe{
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 10px;
+}
